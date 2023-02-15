@@ -15,7 +15,7 @@ namespace Uroosoft_Auto_Backup
             comboBox1.SelectedIndex = 0;
             dateTimePicker1.Value = DateTime.Now;
             db.Database.EnsureCreated();
-            //db.Process.ToList();
+            dataGridView1.DataSource = db.Process.ToList();
 
         }
 
@@ -52,6 +52,7 @@ namespace Uroosoft_Auto_Backup
                 };
                 db.Process.Add(dd);
                 db.SaveChanges();
+                dataGridView1.DataSource = db.Process.ToList();
             }
             else
             {

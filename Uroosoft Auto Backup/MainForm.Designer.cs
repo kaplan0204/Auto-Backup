@@ -32,6 +32,7 @@ namespace Uroosoft_Auto_Backup
             this.components = new System.ComponentModel.Container();
             this.TabpagePanel = new System.Windows.Forms.TabControl();
             this.TabSourcePath = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -53,12 +54,12 @@ namespace Uroosoft_Auto_Backup
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.TabSavedProcess = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TabLogView = new System.Windows.Forms.TabPage();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.TabpagePanel.SuspendLayout();
             this.TabSourcePath.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -69,8 +70,6 @@ namespace Uroosoft_Auto_Backup
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.TabSavedProcess.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TabpagePanel
@@ -87,6 +86,7 @@ namespace Uroosoft_Auto_Backup
             // 
             // TabSourcePath
             // 
+            this.TabSourcePath.Controls.Add(this.dataGridView1);
             this.TabSourcePath.Controls.Add(this.panel11);
             this.TabSourcePath.Controls.Add(this.panel10);
             this.TabSourcePath.Controls.Add(this.panel5);
@@ -98,6 +98,17 @@ namespace Uroosoft_Auto_Backup
             this.TabSourcePath.TabIndex = 0;
             this.TabSourcePath.Text = "Görev Oluştur";
             this.TabSourcePath.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 133);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(670, 266);
+            this.dataGridView1.TabIndex = 4;
             // 
             // panel11
             // 
@@ -311,7 +322,6 @@ namespace Uroosoft_Auto_Backup
             // 
             // TabSavedProcess
             // 
-            this.TabSavedProcess.Controls.Add(this.dataGridView1);
             this.TabSavedProcess.Location = new System.Drawing.Point(4, 24);
             this.TabSavedProcess.Name = "TabSavedProcess";
             this.TabSavedProcess.Padding = new System.Windows.Forms.Padding(3);
@@ -320,16 +330,6 @@ namespace Uroosoft_Auto_Backup
             this.TabSavedProcess.Text = "Kayıtlı İşlemler";
             this.TabSavedProcess.UseVisualStyleBackColor = true;
             this.TabSavedProcess.Click += new System.EventHandler(this.TabSavedProcess_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(660, 429);
-            this.dataGridView1.TabIndex = 0;
             // 
             // TabLogView
             // 
@@ -353,6 +353,7 @@ namespace Uroosoft_Auto_Backup
             this.Text = "UrooSoft Auto Backup";
             this.TabpagePanel.ResumeLayout(false);
             this.TabSourcePath.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -368,8 +369,6 @@ namespace Uroosoft_Auto_Backup
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.TabSavedProcess.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
